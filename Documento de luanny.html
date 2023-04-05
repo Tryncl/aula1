@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>Tag Aside</title>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+          
+       <style>
+           * {box-sizing: border-box;}
+           body {font-family: Arial, Helvetica, sans-serif;}
+           .header {background-color:whitesmoke;padding: 30px;text-align: center;font-size: 35px;}
+           .row {display: -webkit-flex;display: flex;}
+           .column {padding: 10px;}
+           .column.side {-webkit-flex: 1;-ms-flex: 1;flex: 1;  border: solid; border-color: black;}
+           .column.middle {-webkit-flex: 2;-ms-flex: 2;flex: 2; border: solid; border-color: black; }
+           .banner{padding:12px;background-color:pink;margin-bottom:5px;}
+           aside div{position:sticky;top:10px;}
+           @media (max-width: 600px) {.row {-webkit-flex-direction: column;flex-direction: column;}}
+       </style>
+   </head>
+    <body>
+       
+      
+       <header class="header">
+           <h1>Aside:</h1>
+       </header>
+
+       
+
+      
+       <main class="row">
+           <div class="column side" style="background-color:whitesmoke;">
+               <p>O elemento aside <b><i>define um bloco de conteúdo que faz referência ao conteúdo principal que o cerca, pode estar ou não em uma barra lateral (sidebar) exibindo informações contextuais, assuntos relacionados, conteúdo publicitário ou um grupo de navegação secundária.</i></b>
+
+
+                   Quando usado dentro de um elemento article, seu conteúdo <b><i>está diretamente relacionado com o conteúdo do artigo, quando usado fora de um elemento article, está relacionado com o conteúdo global do documento como, por exemplo, uma lista de links de um blog (blogroll), blocos de navegação complementar e também publicidade relacionada com conteúdo do documento.</b></i>
+                  
+                   Veja no exemplo abaixo como o <b><i>primeiro elemento aside está diretamente relacionado ao conteúdo do elemento article acrescentando informações sobre o conteúdo do artigo (especificando vários tipos de gírias brasileiras) e como o segundo elemento aside oferece informações complementares sobre o conteúdo global da página</i></b></p>
+           </div>
+          
+           <div class="column middle" style="background-color: whitesmoke;">
+                <h3 class="center" >Gírias comumente vista no Brasil e suas regiões: </h3>
+                <ul circle>
+                    
+                    <li>Baixa da égua</li>
+                    <li>Papel de enrolar prego</li>
+                    <li>Aluado</li>
+                    <li>Amarrado</li>
+                    <li>Atucanar</li>
+                    <li>Chiar</li>
+                    <li>Cusco</li>
+                    <li>Peleia</li>
+                    <li>Miudinho</li>
+                    <li>Levou o farelo</li>
+                    <li>Gaiato</li>
+                    <li>Égua</li>
+                    <li>Bitelo</li>
+                    <li>Empatar</li>
+                    <li>Descabriado</li>
+                    <li>Borracho</li>
+                    <li>Camela</li>
+                </ul>
+                
+        
+            </div>
+            
+           <aside class="column side" style="background-color: whitesmoke;">
+            <div>
+                <div class="banner" Nordeste:>
+                    <ul>
+                        <h4>Nordeste:</h4>
+                        <li>Baixa da égua:Local muito longe</li>
+                        <li>Papel de enrolar prego:Pessoa muito grossa</li>
+                        <li>Aluado:Mal-humorado</li>
+                        <li>Amarrado:Mesquinho</li>
+                    </ul>
+                </div>
+                <div class="banner" Sul:>
+                    <ul>
+                        <h4>Sul:</h4>
+                        <li>Atucanar:Estressar, uma pessoa aborrecida</li>
+                        <li>Chiar:Reclamar</li>
+                        <li>Cusco:Cachorro</li>
+                        <li>Peleia:Briga</li>
+                    </ul>    
+                </div>
+                <div class="banner" Norte:>
+                    <ul>
+                        <h4>Norte:</h4>
+                        <li>Miudinho:Pequeno</li>
+                        <li>Levou o farelo:Faleceu</li>
+                        <li>Gaiato:Uma pessoa muito engraçada</li>
+                        <li>Égua:Espanto</li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <ul>
+                        <h4>Centro-Oeste:</h4>
+                        <li>Bitelo:Algo grande</li>
+                        <li>Empatar:Atrapalhar</li>
+                        <li>Descabriado:Descontrolado</li>
+                        <li>Borracho:Bêbado</li>
+                        <li>Camela:Bicicleta</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        </main>
+   
+   
+   
+    </body>
+</html>
+
+
+
+
